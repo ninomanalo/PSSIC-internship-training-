@@ -1,0 +1,51 @@
+# Week 1 Internship Report – Niño Manalo
+Company: PSSIC
+
+## 📌 Week 1 Focus
+System Overview and Understanding How Biometric Enrollment Works
+
+---
+
+## 🖥 System Overview
+
+During my first week, I was introduced to the overall biometric system used by the company. The system is designed for identity verification and attendance monitoring using biometric data such as fingerprints and facial recognition.
+
+I learned that the system is composed of:
+
+- Biometric devices (fingerprint, Capture picture, Iris, and Signature)
+- Enrollment software
+- Database server (SQL Server via SSMS)
+- C# desktop application interface
+- Network connection between devices and server
+
+The biometric device captures the user’s unique biological data, which is then converted into a digital template and stored securely in the database. The system uses this stored template for future verification.
+
+---
+
+## 🧠 How Biometric Enrollment Works
+
+I learned that biometric enrollment is the process of registering a new user into the system. The process includes:
+
+1. User information input (Name, ID number, department, etc.)
+2. Capturing biometric data (fingerprint or facial scan)
+3. Data processing and template generation
+4. Saving the biometric template to the SQL database
+5. Verifying successful registration
+
+The biometric system does NOT store the actual fingerprint image. Instead, it converts the fingerprint into encrypted mathematical data (biometric template) for security purposes.
+
+If the user is new:
+- The system checks if the ID already exists in the database.
+- If not, enrollment proceeds.
+- If already registered, the system prevents duplicate entries.
+
+---
+
+## 💻 Technical Learning
+
+During this week, I also observed:
+
+- How C# connects to SQL Server using connection strings
+- How SSMS is used to view stored biometric data
+- Basic database structure (tables for users and attendance logs)
+- How biometric devices communicate over a local network
